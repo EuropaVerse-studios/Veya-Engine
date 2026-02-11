@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project>
+	<!-- NMML (parsed by Lime) configuration file -->
+	
+	<!-- Metadata -->
+	<meta title="Veya Engine" package="com.yourname.veyaengine" version="0.1.0" company="YourName" />
+	
+	<!-- Output -->
+	<app main="Main" file="VeyaEngine" path="export" />
+	
+	<!-- Window settings -->
+	<window width="1280" height="720" fps="60" background="#000000" hardware="true" vsync="true" />
+	<window resizable="true" />
+	
+	<!-- Haxe libraries -->
+	<haxelib name="flixel" />
+	
+	<!-- Source paths -->
+	<source path="src" />
+	
+	<!-- Assets -->
+	<assets path="assets" />
+	
+	<!-- Haxe 4.3.0+: Enable pretty syntax errors and stuff. -->
+	<haxedef name="message.reporting" value="classic" />
+	
+	<!-- Optimizations -->
+	<haxedef name="FLX_NO_DEBUG" if="release" />
+	
+</project>
