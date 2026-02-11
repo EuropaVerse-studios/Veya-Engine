@@ -59,6 +59,9 @@ int main(int argc, char* argv[]) {
     
     // SDL_Event gestisce eventi (chiusura finestra, tastiera, ecc.)
     SDL_Event event;
+    // Posizione del quadrato (variabili che cambieranno)
+    float playerX = 350;
+    float playerY = 250;
     
     // IL CUORE DEL ENGINE: loop infinito finché running = true
     while (running) {
@@ -83,15 +86,19 @@ int main(int argc, char* argv[]) {
         
         // Imposta colore di sfondo (R, G, B, A) da 0-255
         // Qui: blu scuro
-        SDL_SetRenderDrawColor(renderer, 30, 60, 120, 255);
+        SDL_SetRenderDrawColor(renderer, 0, 0, 0, 255);
         
         // Pulisce lo schermo col colore impostato
         SDL_RenderClear(renderer);
         
         // Disegna un rettangolo rosso al centro
         SDL_SetRenderDrawColor(renderer, 255, 50, 50, 255);
-        SDL_FRect rect = {350, 250, 100, 100}; // x, y, larghezza, altezza
+        SDL_FRect rect = {100, 100, 200, 150}; // x, y, larghezza, altezza
         SDL_RenderFillRect(renderer, &rect);
+        // Quadrato verde
+        SDL_SetRenderDrawColor(renderer, 50, 255, 50, 255);
+        SDL_FRect rect2 = {500, 400, 80, 80};
+        SDL_RenderFillRect(renderer, &rect2);
         
         // Mostra tutto sullo schermo (swap dei buffer)
         SDL_RenderPresent(renderer);
