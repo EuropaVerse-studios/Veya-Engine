@@ -1,9 +1,1 @@
-export/
-.haxeshim/
-.haxelib/
-*.pyc
-.DS_Store
-.vscode/
-.idea/
-*.hxproj
-*.hxml
+SDL3/
