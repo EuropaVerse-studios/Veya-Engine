@@ -161,27 +161,6 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
 
 ---
 
-## 🗺️ Roadmap
-
-### Milestone 1: Foundation (Current)
-Core engine architecture, rendering, basic systems
-
-### Milestone 2: VN Essentials (Q2 2025)
-Dialogue, characters, choices, save/load
-
-### Milestone 3: Gameplay Integration (Q3 2025)
-Mini-game framework, inventory, point-and-click
-
-### Milestone 4: Editor & Tooling (Q4 2025)
-Visual editor, VeyaScript, asset pipeline
-
-### Milestone 5: v1.0 Release (2026)
-Polish, optimization, full documentation
-
-See detailed [Roadmap](https://github.com/EuropaVerse-studios/veya-engine/wiki/Roadmap) on the wiki.
-
----
-
 ## 📜 License
 
 Veya Engine is released under the **MIT License**. See [LICENSE](LICENSE) for details.
