@@ -1,3 +1,4 @@
 SDL3/
 .exe
 private-docs/
+.vscode/
