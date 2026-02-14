@@ -179,7 +179,6 @@ Built with:
 Inspired by:
 - **Ren'Py** - The gold standard of VN engines
 - **Godot** - Modular architecture and open-source philosophy
-- **Ace Attorney, Danganronpa** - The games we want to help you create
 
 ---
 
@@ -196,8 +195,8 @@ Veya Engine is in **active development**. The core architecture is stable, but A
 ## 📬 Contact & Community
 
 - **Discord:** [Join our community](https://discord.gg/veya-engine) (coming soon)
-- **Twitter/X:** [@VeyaEngine](https://twitter.com/veyaengine) (coming soon)
-- **Email:** contact@veyaengine.dev
+- **Bluesky:** [@VeyaEngine](https://bluesky.com/veyaengine) (coming soon)
+- **Email:** europaverse.studios@gmail.com
 
 ---
 
