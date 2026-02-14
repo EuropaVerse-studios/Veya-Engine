@@ -165,7 +165,7 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
 
 Veya Engine is released under the **MIT License**. See [LICENSE](LICENSE) for details.
 
-**TL;DR:** You can use Veya Engine for anything (personal, commercial, closed-source) with no restrictions. Just include the license file.
+**TL;DR:** You can use Veya Engine for anything (personal, commercial, closed-source) with no restrictions. Just include the license file and mention the engine in the credits.
 
 ---
 
