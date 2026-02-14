@@ -1,25 +1,31 @@
 @echo off
-REM ========================================
-REM Script di compilazione per Windows
-REM ========================================
-
 echo.
 echo ========================================
-echo Compilazione del Game Engine...
+echo Compilazione VEYA ENGINE
 echo ========================================
 echo.
 
-REM Compila con cl.exe (compilatore Visual Studio)
-REM /EHsc = abilita exception handling C++
-REM /I = Include directory (dove sono gli header SDL3)
-REM /link = opzioni del linker
-REM /LIBPATH = dove sono le librerie SDL3
-REM SDL3.lib = collega la libreria SDL3
+echo [1/4] Compilazione PixelFont.cpp...
+cl /c /EHsc Rendering/PixelFont.cpp /I"SDL3\include"
 
-cl /EHsc main.cpp ^
-   /I"SDL3\include" ^
+echo [2/4] Compilazione Menu.cpp...
+cl /c /EHsc UI/Menu.cpp /I"SDL3\include"
+
+echo [3/4] Compilazione Engine.cpp...
+cl /c /EHsc Core/Engine.cpp /I"SDL3\include"
+
+echo [4/4] Compilazione main.cpp...
+cl /c /EHsc main.cpp /I"SDL3\include"
+
+echo.
+echo ========================================
+echo Linking...
+echo ========================================
+echo.
+
+cl PixelFont.obj Menu.obj Engine.obj main.obj ^
    /link /LIBPATH:"SDL3\lib\x64" SDL3.lib ^
-   /SUBSYSTEM:CONSOLE
+   /SUBSYSTEM:CONSOLE /OUT:VeyaEngine.exe
 
 if %ERRORLEVEL% EQU 0 (
     echo.
@@ -27,19 +33,16 @@ if %ERRORLEVEL% EQU 0 (
     echo Compilazione riuscita!
     echo ========================================
     echo.
+    if not exist SDL3.dll (
+        copy SDL3\lib\x64\SDL3.dll .
+    )
     echo Eseguo il programma...
     echo.
-    main.exe
+    VeyaEngine.exe
 ) else (
     echo.
     echo ========================================
-    echo ERRORE durante la compilazione!
+    echo ERRORE!
     echo ========================================
-    echo.
-    echo Controlla:
-    echo 1. Hai aperto "Developer Command Prompt for VS 2022"?
-    echo 2. La cartella SDL3 e' presente?
-    echo 3. Hai scaricato SDL3-VC.zip?
-    echo.
     pause
 )
