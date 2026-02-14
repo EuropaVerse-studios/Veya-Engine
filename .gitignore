@@ -42,5 +42,12 @@ config.local.ini
 # Compiled assets (keep sources)
 assets/compiled/
 
-#private folders and files
-private-docs
+# Private folders and files
+private-docs/
+notes/
+TODO.txt
+
+# Specific Veya Engine files
+VeyaEngine.exe
+*.pdb          # ← File di debug Visual Studio (opzionale)
+*.ilk          # ← File incrementale linker (opzionale)
