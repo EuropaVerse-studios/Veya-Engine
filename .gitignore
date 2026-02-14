@@ -1,4 +1,46 @@
-SDL3/
-.exe
-private-docs/
+# Veya Engine
+
+# Build artifacts
+build/
+*.obj
+*.exe
+*.dll
+*.so
+*.dylib
+*.a
+*.lib
+
+# IDE/Editor files
 .vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Visual Studio
+.vs/
+*.vcxproj.user
+*.sln.docstates
+*.suo
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Temporary files
+*.log
+*.tmp
+*.bak
+
+# SDL3 library (users download separately)
+SDL3/
+
+# User-specific config
+config.local.ini
+
+# Compiled assets (keep sources)
+assets/compiled/
+
+#private folders and files
+private-docs
